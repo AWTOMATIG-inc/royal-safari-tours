@@ -43,7 +43,7 @@ export default function Header() {
       <header className="fixed w-full top-0 z-99 font-inter">
         <div
           className={`relative ${
-            scrolled ? "bg-black/20 lg:bg-white" : "bg-transparent"
+            scrolled ? "bg-white lg:bg-white" : "bg-transparent"
           }`}
         >
           <nav className="container mx-auto py-2 ">
@@ -74,7 +74,13 @@ export default function Header() {
 
               <button
                 onClick={() => setIsShowNav((prev) => !prev)}
-                className="cursor-pointer lg:hidden z-[100] text-white mr-6"
+                className={`cursor-pointer lg:hidden z-[100]  mr-6 ${
+                  scrolled
+                    ? isShowNav
+                      ? "text-white"
+                      : "text-black"
+                    : "text-white"
+                }`}
               >
                 <Icon
                   icon="akar-icons:three-line-horizontal"

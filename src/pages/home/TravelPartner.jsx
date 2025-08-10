@@ -15,7 +15,7 @@ export default function TravelPartner() {
           }
           subtitle={"Start Exploring"}
         />
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-4 xxs:gap-8">
           <CounterWithText
             className=""
             title="Tours Successfully Operated"
@@ -38,7 +38,7 @@ export default function TravelPartner() {
           />
         </div>
         <div></div>
-        <div className="mx-auto w-fit mt-32">
+        <div className="mx-auto w-fit mt-20 sm:mt-32">
           <ShapeButton
             name="TRAVEL GUIDE"
             className="group-hover:text-red-500 hoverEffect"

@@ -67,7 +67,7 @@ export const GreenCircleIcon = ({ className }) => {
   return (
     <svg
       viewBox="0 0 101 101"
-      className={`size-20 ${className}`}
+      className={`size-18 md:size-20  ${className}`}
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clipPath="url(#clip0_1_5163)">
