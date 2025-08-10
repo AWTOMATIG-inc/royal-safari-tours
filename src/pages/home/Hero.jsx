@@ -15,7 +15,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import hp1 from "../../assets/home/hp1.jpg";
 import hp2 from "../../assets/home/hp2.jpg";
 import hp3 from "../../assets/home/hp3.jpeg";
-const images = [hp1, hp2, hp3];
+const slideItems = [
+  { id: 1, title: "Your Next Great Journey Starts Here", image: hp1 },
+  { id: 2, title: "Discover the World, One Adventure at a Time", image: hp2 },
+  {
+    id: 3,
+    title: "Where Every Trip Becomes a Story Worth Telling",
+    image: hp3,
+  },
+];
 export default function Hero() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
@@ -36,13 +44,22 @@ export default function Hero() {
           speed={1000}
           className="mySwiper2 h-[55vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh]"
         >
-          {images.map((img) => (
-            <SwiperSlide key={img}>
-              <img
-                className="w-full h-full  object-cover"
-                src={img}
-                alt="banner"
-              />
+          {slideItems.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div className="relative w-full h-full text-white text-center">
+                <h5 className="absolute left-1/2 top-44 -translate-x-1/2 font-yuji text-xl sm:text-2xl md:text-3xl xl:text-4xl w-full">
+                  Explore Beyond Borders
+                </h5>
+
+                <h1 className="absolute top-[60%] md:top-1/2 left-1/2 -translate-1/2 font-young text-3xl sm:text-4xl md:text-5xl xl:text-6xl w-full">
+                  {item.title}
+                </h1>
+                <img
+                  className="w-full h-full object-cover "
+                  src={item.image}
+                  alt="banner"
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -58,11 +75,11 @@ export default function Hero() {
                 modules={[Thumbs]}
                 className="mt-4 w-[200px] xxs:w-[250px] sm:w-[400px] md:w-[500px] lg:w-[700px] "
               >
-                {images.map((img, index) => (
-                  <SwiperSlide key={index} className="cursor-pointer">
+                {slideItems.map((item) => (
+                  <SwiperSlide key={item.id} className="cursor-pointer">
                     <img
-                      src={img}
-                      alt={`thumb-${index}`}
+                      src={item.image}
+                      alt={`thumb-${item.id}`}
                       className="w-[98px] h-[90px] xxs:h-[120px] sm:h-[160px] sm:w-[250px] md:w-[180px] md:h-[200px] lg:w-[200px] lg:h-[230px]  object-cover border rounded-full"
                     />
                   </SwiperSlide>

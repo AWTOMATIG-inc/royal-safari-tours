@@ -53,7 +53,7 @@ export default function Header() {
                   <img
                     src={royal_logo}
                     alt="Logo"
-                    className="w-40 h-auto object-cover"
+                    className="w-30 xxs:w-36 sm:w-40 h-auto object-cover"
                   />
                 </Link>
               </div>
@@ -62,8 +62,8 @@ export default function Header() {
                   <li key={link.id}>
                     <Link
                       to={link.path}
-                      className={`hover:text-green-500 transition-colors duration-300 ${
-                        pathname == link.path && "text-green-500"
+                      className={`hover:text-orange-400 transition-colors duration-300 ${
+                        pathname == link.path && "text-orange-400"
                       }`}
                     >
                       {link.pathname}
