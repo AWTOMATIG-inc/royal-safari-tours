@@ -34,7 +34,7 @@ export default function Hero() {
           thumbs={{ swiper: thumbsSwiper }}
           slidesPerView={1}
           loop={true}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 6000, disableOnInteraction: false }}
           pagination={false}
           navigation={{
             nextEl: ".custom-next",

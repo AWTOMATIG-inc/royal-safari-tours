@@ -41,7 +41,7 @@ export default function TravelPartner() {
         <div className="mx-auto w-fit mt-20 sm:mt-32">
           <ShapeButton
             name="TRAVEL GUIDE"
-            className="group-hover:text-red-500 hoverEffect"
+            className="group-hover:text-black hoverEffect"
           />
         </div>
       </div>
