@@ -1,6 +1,6 @@
-export default function ShapeButton({ name, className }) {
+export default function ShapeButton({ name, className, ...rest }) {
   return (
-    <button className="relative cursor-pointer group">
+    <button className="relative cursor-pointer group" {...rest}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="159"

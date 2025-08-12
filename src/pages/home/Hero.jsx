@@ -33,6 +33,7 @@ export default function Hero() {
           modules={[Navigation, Pagination, Autoplay, EffectFade, Thumbs]}
           thumbs={{ swiper: thumbsSwiper }}
           slidesPerView={1}
+          fadeEffect={{ crossFade: true }}
           loop={true}
           autoplay={{ delay: 6000, disableOnInteraction: false }}
           pagination={false}

@@ -21,6 +21,12 @@
   .bg-body {
     @apply bg-[url('/images/banners/bg-for-body.png'),linear-gradient(#fcfaee,#fcfaee)] bg-center;
   }
+  .bg-body2 {
+    @apply bg-[url('/images/banners/bg-for-body2.png'),linear-gradient(#F0ECDC,#F0ECDC)] bg-center;
+  }
+  .bg-banner-subscription {
+    @apply bg-[linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('/images/banners/banner2.jpg')] bg-center bg-cover;
+  }
 }
 @layer utilities {
   .header-gradient {
