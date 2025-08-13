@@ -1,5 +1,5 @@
-import Header from "../../components/Header";
 import Facilities from "./Facilities";
+import GallerySlider from "./GallerySlider";
 import Hero from "./Hero";
 import Memories from "./Memories";
 import NatureAndBeyond from "./NatureAndBeyond";
@@ -12,7 +12,6 @@ import TravelPartner from "./TravelPartner";
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
       <TravelPartner />
       <SharedStories />
@@ -23,6 +22,7 @@ export default function Home() {
       <NatureAndBeyond />
       <Testimonials />
       <Subscription />
+      <GallerySlider />
     </>
   );
 }

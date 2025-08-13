@@ -27,6 +27,9 @@
   .bg-banner-subscription {
     @apply bg-[linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('/images/banners/banner2.jpg')] bg-center bg-cover;
   }
+  .bg-footer-banner {
+    @apply bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/images/banners/footer-banner.jpg')] bg-center bg-cover;
+  }
 }
 @layer utilities {
   .header-gradient {

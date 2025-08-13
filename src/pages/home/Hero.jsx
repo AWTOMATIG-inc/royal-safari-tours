@@ -88,10 +88,10 @@ export default function Hero() {
               </Swiper>
             </div>
             <div className="flex gap-x-4 justify-between absolute left-0 sm:static !w-full sm:px-8 z-10 px-1.5 xxs:px-3">
-              <button className="custom-prev cursor-pointer border rounded-full hover:bg-green-500 hoverEffect">
+              <button className="custom-prev cursor-pointer border rounded-full hover:bg-green hoverEffect">
                 <Icon icon="solar:arrow-left-linear" width="25" height="25" />
               </button>
-              <button className="custom-next cursor-pointer border rounded-full hover:bg-green-500 hoverEffect">
+              <button className="custom-next cursor-pointer border rounded-full hover:bg-green hoverEffect">
                 <Icon icon="solar:arrow-right-linear" width="25" height="25" />
               </button>
             </div>

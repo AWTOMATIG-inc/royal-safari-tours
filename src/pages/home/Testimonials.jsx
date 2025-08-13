@@ -97,7 +97,7 @@ export default function Testimonials() {
                     <h5 className="font-semibold">{item.review.name}</h5>
                     <Rating
                       rating={item.review.rating}
-                      className="size-4 md:size-5 text-green-400 mt-2"
+                      className="size-4 md:size-5 text-green mt-2"
                     />
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function Testimonials() {
             ))}
           </Swiper>
           <div className="hidden md:flex gap-x-4 justify-between w-full absolute left-0 -translate-y-1/2 top-1/2 z-10">
-            <button className="custom-prev2 cursor-pointer border rounded-full bg-green-500 hoverEffect border-none">
+            <button className="custom-prev2 cursor-pointer border rounded-full bg-green hoverEffect border-none">
               <Icon
                 icon="solar:arrow-left-linear"
                 width="25"
@@ -113,7 +113,7 @@ export default function Testimonials() {
                 className="relative right-4"
               />
             </button>
-            <button className="custom-next2 cursor-pointer border rounded-full bg-green-500 hoverEffect border-none">
+            <button className="custom-next2 cursor-pointer border rounded-full bg-green hoverEffect border-none">
               <Icon
                 icon="solar:arrow-right-linear"
                 width="25"

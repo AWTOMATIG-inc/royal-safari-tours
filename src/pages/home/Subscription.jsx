@@ -29,7 +29,10 @@ export default function Subscription() {
                   <ShapeInput placeholder="Email" />
                 </div>
 
-                <ShapeButton name="SUBSCRIPTION" />
+                <ShapeButton
+                  className="group-hover:text-orange-400 hoverEffect"
+                  name="SUBSCRIPTION"
+                />
               </form>
               <p className="text-white text-sm mt-4 text-center lg:text-left">
                 Get Travel Deals & Inspo in Your Inbox

@@ -1,5 +1,5 @@
 import ShapeButton from "../../components/ShapeButton";
-import { ForestWorldIcom } from "../../components/svg-icons";
+import { ForestWorldIcon } from "../../components/svg-icons";
 
 export default function Memories() {
   return (
@@ -25,7 +25,7 @@ export default function Memories() {
           </div>
 
           <button className="flex-1 flex justify-end">
-            <ForestWorldIcom className="size-[110px] md:size-[170px]" />
+            <ForestWorldIcon className="size-[110px] md:size-[170px]" />
           </button>
         </div>
         <div className="w-fit mx-auto lg:hidden">
