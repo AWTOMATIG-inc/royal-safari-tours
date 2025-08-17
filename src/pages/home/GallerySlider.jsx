@@ -25,20 +25,20 @@ const slideItems = [
 ];
 export default function GallerySlider() {
   return (
-    <div className="container py-10">
+    <div className="container py-10 hidden md:block">
       <div className="relative ">
         <Swiper
           modules={[FreeMode, Navigation, Pagination, Autoplay]}
           slidesPerView={5}
           loop={true}
           spaceBetween={10}
-          autoplay={{ delay: 6000, disableOnInteraction: false }}
+          autoplay={{ delay: 0, disableOnInteraction: false }}
           pagination={false}
           freeMode={true}
-          speed={1000}
+          speed={4000}
         >
-          {slideItems.map((item) => (
-            <SwiperSlide key={item}>
+          {slideItems.map((item, index) => (
+            <SwiperSlide key={index}>
               <div>
                 <img
                   className="w-full h-full object-cover"

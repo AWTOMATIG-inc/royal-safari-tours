@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mansalva&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&family=Young+Serif&family=Yuji+Mai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mansalva&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&family=Young+Serif&family=Yuji+Mai&display=swap");
 
 @import "tailwindcss";
 
@@ -9,9 +9,11 @@
   --font-yuji: "Yuji Mai", serif;
   --font-mansalva: "Mansalva", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
+  --font-montagu: "Montagu Slab", serif;
   --color-light: #fcfaee;
   --color-lightGray: #f2efdf;
   --color-green: #2cb775;
+  --color-orange: #ff9933;
   --breakpoint-xxs: 345px;
 }
 @utility container {
@@ -26,6 +28,9 @@
   }
   .bg-banner-subscription {
     @apply bg-[linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('/images/banners/banner2.jpg')] bg-center bg-cover;
+  }
+  .bg-about-banner {
+    @apply bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/images/banners/about-banner.jpg')] bg-center bg-cover;
   }
   .bg-footer-banner {
     @apply bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/images/banners/footer-banner.jpg')] bg-center bg-cover;

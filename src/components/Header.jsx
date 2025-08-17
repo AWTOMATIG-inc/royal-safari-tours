@@ -21,6 +21,11 @@ const links = [
   },
   {
     id: 4,
+    pathname: "ABOUT US",
+    path: "/about-us",
+  },
+  {
+    id: 5,
     pathname: "CONTACT",
     path: "/contact",
   },

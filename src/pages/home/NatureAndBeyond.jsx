@@ -60,7 +60,7 @@ export default function NatureAndBeyond() {
           />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-20">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 xxs:gap-4 lg:gap-10 pt-20">
           {tour_packages.map((tour_package) => (
             <TourCard key={tour_package.id} tour_package={tour_package} />
           ))}
