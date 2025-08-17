@@ -112,7 +112,7 @@ export default function DetailSection({ packages }) {
                 </li>
               </ul>
               <PaymentIcon className="mt-8" />
-              <p className="font-medium text-lg mt-8">About your query!</p>
+              <p className="font-medium text-lg mt-8">About your query!!</p>
             </div>
           </div>
         </div>
