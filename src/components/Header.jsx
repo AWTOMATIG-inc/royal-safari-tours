@@ -15,11 +15,6 @@ const links = [
     path: "/adventure",
   },
   {
-    id: 3,
-    pathname: "TOURS",
-    path: "/tours",
-  },
-  {
     id: 4,
     pathname: "ABOUT US",
     path: "/about-us",
@@ -48,11 +43,15 @@ export default function Header() {
       <header className="fixed w-full top-0 z-99 font-inter">
         <div
           className={`relative ${
-            scrolled ? "bg-white lg:bg-white" : "bg-transparent"
+            scrolled
+              ? "bg-white lg:bg-white text-[#161616]"
+              : pathname === "/"
+              ? "text-[#161616] bg-transparent"
+              : "text-white bg-transparent"
           }`}
         >
           <nav className="container mx-auto py-2 ">
-            <div className="flex flex-row-reverse lg:flex-row justify-between h-32  items-center text-[#161616]">
+            <div className="flex flex-row-reverse lg:flex-row justify-between h-32  items-center ">
               <div className="absolute left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:static">
                 <Link to="/" className="">
                   <img

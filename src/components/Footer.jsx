@@ -6,28 +6,23 @@ import { PaymentIcon, SupportIcon } from "./svg-icons";
 const helperLinks = [
   {
     id: 0,
-    lavel: "History",
-    link: "history",
+    lavel: "Home",
+    link: "/",
   },
   {
     id: 1,
-    lavel: "Press Release",
-    link: "/press-release",
+    lavel: "Adventure",
+    link: "/adventure",
   },
   {
     id: 2,
-    lavel: "Privacy Policy",
-    link: "/privacy-policy",
+    lavel: "About Us",
+    link: "/about-us",
   },
   {
     id: 3,
-    lavel: "Help & Faq",
-    link: "/help-and-faq",
-  },
-  {
-    id: 4,
-    lavel: "Conatct Us",
-    link: "/conatct-us",
+    lavel: "Contact us",
+    link: "/contact",
   },
 ];
 const countryLinks = [

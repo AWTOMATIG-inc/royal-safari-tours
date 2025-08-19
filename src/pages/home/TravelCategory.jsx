@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import boating from "../../assets/png-icons/boating.png";
 import island_travel from "../../assets/png-icons/island_travel.png";
 import forest from "../../assets/png-icons/road_11508960.png";
@@ -64,7 +65,12 @@ export default function TravelCategory() {
           wonder. Set your sights on the extraordinary, your next great
           adventure awaits.
         </p>
-        <ShapeButton name="Book To Start" className="group-hover:text-black" />
+        <Link to="/contact">
+          <ShapeButton
+            name="Book To Start"
+            className="group-hover:text-black"
+          />
+        </Link>
       </div>
     </div>
   );

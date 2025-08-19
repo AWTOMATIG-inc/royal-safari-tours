@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import ShapeButton from "../../components/ShapeButton";
 import { ForestWorldIcon } from "../../components/svg-icons";
-
 export default function Memories() {
   return (
     <div className="bg-light pb-10">
@@ -17,10 +17,12 @@ export default function Memories() {
               Travel with the people you love, make memories that last.
             </h1>
             <div className="hidden lg:block">
-              <ShapeButton
-                name="READ MORE"
-                className="group-hover:text-orange-400"
-              />
+              <Link to="/adventure">
+                <ShapeButton
+                  name="READ MORE"
+                  className="group-hover:text-orange-400"
+                />
+              </Link>
             </div>
           </div>
 
@@ -29,10 +31,12 @@ export default function Memories() {
           </button>
         </div>
         <div className="w-fit mx-auto lg:hidden">
-          <ShapeButton
-            name="READ MORE"
-            className="group-hover:text-orange-400"
-          />
+          <Link to="/adventure">
+            <ShapeButton
+              name="READ MORE"
+              className="group-hover:text-orange-400"
+            />
+          </Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 export default function StoryCard({ story }) {
   return (
-    <div className="relative max-w-[400px] h-[180px] xxs:h-[220px] sm:h-[350px]  md:h-[400px] xl:h-[500px]  after:bg-orange-500/50 after:h-full after:w-full after:absolute after:top-0 after:left-0 after:z-10 overflow-hidden rounded-full after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-300 cursor-pointer">
+    <div className="relative max-w-[400px] h-[160px] xxs:h-[200px] sm:h-[350px]  md:h-[400px] xl:h-[500px]  after:bg-orange-500/50 after:h-full after:w-full after:absolute after:top-0 after:left-0 after:z-10 overflow-hidden rounded-full after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-300 cursor-pointer">
       <img
         src={story.image}
         alt="story"

@@ -4,6 +4,7 @@ import Adventure from "../pages/adventure";
 import Contact from "../pages/contact";
 import Home from "../pages/home";
 import PackageDetails from "../pages/package-details";
+import ProductCartView from "../pages/product-cart-view";
 import Tours from "../pages/tours";
 
 export default function Routers() {
@@ -14,6 +15,7 @@ export default function Routers() {
         <Route path="/adventure" element={<Adventure />} />
         <Route path="/tours" element={<Tours />} />
         <Route path="/packages/:id" element={<PackageDetails />} />
+        <Route path="/product/cart-view" element={<ProductCartView />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about-us" element={<AboutUs />} />
       </Routes>

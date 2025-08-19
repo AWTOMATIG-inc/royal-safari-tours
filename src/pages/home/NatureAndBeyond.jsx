@@ -1,30 +1,48 @@
-import bethTakingSl from "../../assets/tour-package/15497.jpeg";
-import advantureSl from "../../assets/tour-package/15498.jpeg";
-import magicalSl from "../../assets/tour-package/15499.jpeg";
 import CommonHeading from "../../components/CommonHeading";
 import ShapeButton from "../../components/ShapeButton";
 import TourCard from "../../components/TourCard";
 const tour_packages = [
   {
     id: 1,
-    image: magicalSl,
+    image: "/images/tour-package/15499.jpeg",
     title: "Hiking",
-    price: 166.0,
+    price: "43,500",
     rating: 5,
   },
   {
     id: 2,
-    image: advantureSl,
+    image: "/images/tour-package/15498.jpeg",
     title: "Wild Safari",
-    price: 200.0,
+    price: "32,900",
     rating: 5,
-    priceOff: 220.0,
+    priceOff: "2500",
   },
   {
     id: 3,
-    image: bethTakingSl,
+    image: "/images/tour-package/15497.jpeg",
     title: "Mountain Climbing",
-    price: 200.0,
+    price: "48,900",
+    rating: 5,
+  },
+  {
+    id: 4,
+    image: "/images/tour-package/15500.jpeg",
+    title: "Experience",
+    price: "43,900",
+    rating: 5,
+  },
+  {
+    id: 5,
+    image: "/images/tour-package/15501.jpeg",
+    title: "Discover",
+    price: "49,900",
+    rating: 5,
+  },
+  {
+    id: 6,
+    image: "/images/tour-package/15502.jpeg",
+    title: "Explore",
+    price: "31,900",
     rating: 5,
   },
 ];

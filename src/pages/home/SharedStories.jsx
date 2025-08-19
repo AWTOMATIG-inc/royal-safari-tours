@@ -1,21 +1,28 @@
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import china from "../../assets/story/china.jpg";
 import maldives from "../../assets/story/maldives.jpg";
+import nepal from "../../assets/story/nepal.jpg";
 import srilanka from "../../assets/story/srilanka.jpg";
+import thailand from "../../assets/story/thailand.jpg";
+
 import StoryCard from "../../components/StoryCard";
 const stories = [
   { id: 1, image: china, country: "china" },
   { id: 2, image: maldives, country: "maldives" },
   { id: 3, image: srilanka, country: "srilanka" },
+  { id: 4, image: nepal, country: "Nepal" },
+  { id: 5, image: thailand, country: "Thailand" },
 ];
 export default function SharedStories() {
   return (
     <div className="bg-body">
       <div className="container grid lg:grid-cols-[1fr_2fr] items-center gap-5 xl:gap-8 py-16">
         <div className="xl:w-[85%] text-center lg:text-left">
-          <h4 className="text-3xl font-mansalva">
+          <h4 className="text-2xl sm:text-3xl font-mansalva">
             Beautiful Destinations Await
           </h4>
-          <h1 className="font-bold text-4xl xl:text-5xl mt-8 mb-14">
+          <h1 className="font-bold text-3xl sm:text-4xl xl:text-5xl mt-8 mb-14">
             Photos Taken. Stories Shared.
           </h1>
           <p>
@@ -24,11 +31,41 @@ export default function SharedStories() {
             go far beyond the ordinary.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-3 sm:gap-8 lg:gap-4 xl:gap-8 mt-6 lg:mt-0">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          loop={true}
+          slidesPerView={3}
+          spaceBetween={10}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          pagination={false}
+          speed={1000}
+          className="w-full"
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 15,
+            },
+
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+        >
           {stories.map((story) => (
-            <StoryCard key={story.id} story={story} />
+            <SwiperSlide key={story.id}>
+              <StoryCard story={story} />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </div>
   );

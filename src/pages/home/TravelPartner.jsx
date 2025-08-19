@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import CommonHeading from "../../components/CommonHeading";
 import CounterWithText from "../../components/CounterWithText";
 import ShapeButton from "../../components/ShapeButton";
-
 export default function TravelPartner() {
   return (
     <section className="pt-40 pb-8 bg-body">
@@ -39,10 +39,12 @@ export default function TravelPartner() {
         </div>
         <div></div>
         <div className="mx-auto w-fit mt-20 sm:mt-32">
-          <ShapeButton
-            name="TRAVEL GUIDE"
-            className="group-hover:text-black hoverEffect"
-          />
+          <Link to="/about-us">
+            <ShapeButton
+              name="TRAVEL GUIDE"
+              className="group-hover:text-black hoverEffect"
+            />
+          </Link>
         </div>
       </div>
     </section>

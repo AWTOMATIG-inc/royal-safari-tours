@@ -10,7 +10,9 @@ export default function HeroSection({ children, banner }) {
       className="h-full"
     >
       <div className="container">
-        <div className="grid place-items-center min-h-[50vh]">{children}</div>
+        <div className="grid place-items-center min-h-[40vh] sm:min-h-[50vh]">
+          <div className="mt-20 sm:mt-15">{children}</div>
+        </div>
       </div>
     </section>
   );
