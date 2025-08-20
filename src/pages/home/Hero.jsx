@@ -48,13 +48,16 @@ export default function Hero() {
           {slideItems.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="relative w-full h-full text-white text-center">
-                <h5 className="absolute left-1/2 top-44 -translate-x-1/2 font-yuji text-xl sm:text-2xl md:text-3xl xl:text-4xl w-full">
-                  Explore Beyond Borders
-                </h5>
+                <div className="absolute top-[60%] md:top-[50%] xl:top-[40%] left-1/2 -translate-1/2 w-full px-4 lg:px-8">
+                  <h5 className="pb-10 md:pb-20 lg:pb-40 font-yuji text-xl sm:text-2xl md:text-3xl xl:text-4xl">
+                    Explore Beyond Borders
+                  </h5>
 
-                <h1 className="absolute top-[60%] md:top-1/2 left-1/2 -translate-1/2 font-young text-3xl sm:text-4xl md:text-5xl xl:text-6xl w-full">
-                  {item.title}
-                </h1>
+                  <h1 className="font-young text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
+                    {item.title}
+                  </h1>
+                </div>
+
                 <img
                   className="w-full h-full object-cover "
                   src={item.image}

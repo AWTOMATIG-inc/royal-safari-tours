@@ -11,7 +11,7 @@ export default function Subscription() {
         className="bg-banner-subscription"
       >
         <div className="container max-w-[1520px] min-h-[394px] grid place-content-center py-8">
-          <div className="grid lg:grid-cols-2 items-center gap-20">
+          <div className="grid lg:grid-cols-[1fr_1.2fr] xl:grid-cols-2 items-center gap-20 lg:gap-8 xl:gap-20">
             <div>
               <p className="text-white text-center lg:text-left text-3xl md:text-4xl font-semibold font-palanquin leading-[72px] xl:w-[80%]">
                 From peaks to paths, explore the world through our curated
@@ -24,7 +24,7 @@ export default function Subscription() {
                 className="flex flex-col sm:flex-row gap-10 justify-center items-center lg:justify-start"
                 action="#"
               >
-                <div className="flex  gap-10">
+                <div className="flex xxs:gap-4 sm:gap-10">
                   <ShapeInput placeholder="Name" />
                   <ShapeInput placeholder="Email" />
                 </div>

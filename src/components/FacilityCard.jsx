@@ -4,7 +4,7 @@ export default function FacilityCard({ facility }) {
       <img
         src={facility.image}
         alt={facility.title}
-        className="w-14 xxs:w-18 sm:w-20 h-fit"
+        className="w-14 h-14 xxs:w-18 xxs:h-18 sm:w-20 sm:h-20"
       />
       <div>
         <h3 className="font-bold text-xl sm:text-2xl capitalize mb-3">
