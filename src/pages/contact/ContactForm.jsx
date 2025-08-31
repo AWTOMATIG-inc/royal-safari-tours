@@ -2,7 +2,7 @@ import InputBox from "../../components/InputBox";
 import ShapeButton from "../../components/ShapeButton";
 export default function ContactForm() {
   return (
-    <div className="pt-12 lg:pt-20 bg-light">
+    <div className="py-12 lg:py-20 bg-light">
       <div className="container md:!px-28 lg:!px-8 grid lg:grid-cols-[3fr_2fr] gap-8 lg:gap-12">
         <div>
           <iframe

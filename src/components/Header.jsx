@@ -44,7 +44,7 @@ export default function Header() {
         <div
           className={`relative ${
             scrolled
-              ? "bg-white lg:bg-white text-[#161616]"
+              ? "bg-lightGray lg:bg-lightGray text-[#161616]"
               : pathname === "/"
               ? "text-[#161616] bg-transparent"
               : "text-white bg-transparent"
@@ -94,13 +94,13 @@ export default function Header() {
               </button>
               {/* for mobile */}
               <div
-                className={`lg:hidden absolute z-99 top-0 right-0  transition-all duration-300 header-gradient  origin-top ${
+                className={`lg:hidden absolute z-99 top-0 right-0  transition-all duration-300 header-gradient w-full h-screen  origin-top ${
                   isShowNav
                     ? "translate-x-0 opacity-100"
                     : "translate-x-full opacity-0"
                 }`}
               >
-                <div className="mt-28 mb-8">
+                <div className="mt-28 mb-8 mr-0.5 w-fit ml-auto">
                   <img
                     src={royal_logo2}
                     alt="Logo"
@@ -111,9 +111,10 @@ export default function Header() {
                     {links.map((link) => (
                       <li key={link.id}>
                         <Link
+                          onClick={() => setIsShowNav((prev) => !prev)}
                           to={link.path}
                           className={`hover:text-white transition-colors duration-300 ${
-                            pathname == link.path && "text-white"
+                            pathname == link.path ? "text-white" : "text-black"
                           }`}
                         >
                           {link.pathname}

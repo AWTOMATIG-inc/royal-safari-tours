@@ -88,9 +88,9 @@ export default function Footer() {
                 <SupportIcon className="group-hover:text-orange-400" />
                 <a
                   className="group-hover:underline group-hover:text-orange-400"
-                  href="mailto:support@example.com"
+                  href="mailto:info.royalsafaritours@gmail.com"
                 >
-                  support@example.com
+                  info.royalsafaritours@gmail.com
                 </a>
               </div>
             </div>
@@ -124,15 +124,15 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="bg-green p-4 inline-block transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
+                  className="bg-green p-4 block transtion-all duration-300 rounded-sm hover:bg-black w-full h-full"
                 >
-                  <Icon icon="mdi:twitter" width="21" height="21" />
+                  <Icon icon="prime:twitter" width="19" height="19" />
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="bg-green p-4 inline-block transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
+                  className="bg-green p-4 block transtion-all duration-300 rounded-sm hover:bg-black w-full h-full"
                 >
                   <Icon icon="uiw:facebook" width="18" height="18" />
                 </a>
@@ -140,7 +140,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="bg-green p-4 inline-block transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
+                  className="bg-green p-4 block transtion-all duration-300 rounded-sm hover:bg-black  w-full h-full"
                 >
                   <Icon icon="mdi:instagram" width="21" height="21" />
                 </a>
@@ -148,7 +148,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="bg-green p-4 inline-block transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
+                  className="bg-green p-4 block transtion-all duration-300 rounded-sm hover:bg-black w-full h-full"
                 >
                   <Icon icon="mdi:youtube" width="21" height="21" />
                 </a>
@@ -185,15 +185,15 @@ export default function Footer() {
             <li>
               <a
                 href="#"
-                className="bg-green p-4 inline-block transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
+                className="bg-green p-4 block h-full w-full transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
               >
-                <Icon icon="mdi:twitter" width="21" height="21" />
+                <Icon icon="prime:twitter" width="19" height="19" />
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="bg-green p-4 inline-block transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
+                className="bg-green p-4 block h-full w-full transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
               >
                 <Icon icon="uiw:facebook" width="18" height="18" />
               </a>
@@ -201,7 +201,7 @@ export default function Footer() {
             <li>
               <a
                 href="#"
-                className="bg-green p-4 inline-block transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
+                className="bg-green p-4 block h-full w-full transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
               >
                 <Icon icon="mdi:instagram" width="21" height="21" />
               </a>
@@ -209,7 +209,7 @@ export default function Footer() {
             <li>
               <a
                 href="#"
-                className="bg-green p-4 inline-block transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
+                className="bg-green p-4 block h-full w-full transtion-all duration-300 rounded-sm hover:bg-black hover:scale-110"
               >
                 <Icon icon="mdi:youtube" width="21" height="21" />
               </a>
@@ -218,12 +218,12 @@ export default function Footer() {
         </div>
         <div className="py-10 border-t border-gray-600 mt-10 relative flex flex-col sm:flex-row items-center gap-3 justify-between lg:flex-col">
           <div className="text-center">
-            Powerby{" "}
+            Powered By{" "}
             <a
               className="hover:text-orange-400 hover:underline"
               href="https://awtomatig.com/"
             >
-              Awtomatig
+              AWTOMATIG
             </a>
           </div>
           <div className="lg:absolute top-1/2 lg:-translate-y-1/2 right-0 ">

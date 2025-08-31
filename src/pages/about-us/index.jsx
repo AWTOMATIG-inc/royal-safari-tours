@@ -8,7 +8,7 @@ import TeamSection from "./TeamSection";
 export default function AboutUs() {
   return (
     <div>
-      <HeroSection banner="/images/banners/about.jpg">
+      <HeroSection banner="/images/banners/camping.jpg">
         <div>
           <h5 className="text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold font-palanquin">
             About Us

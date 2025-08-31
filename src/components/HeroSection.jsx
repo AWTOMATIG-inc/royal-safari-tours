@@ -7,7 +7,7 @@ export default function HeroSection({ children, banner }) {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="h-full"
+      className="h-full "
     >
       <div className="container">
         <div className="grid place-items-center min-h-[40vh] sm:min-h-[50vh]">
