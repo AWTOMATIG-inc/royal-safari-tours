@@ -1,92 +1,7 @@
 import { useState } from "react";
 import TourCard from "../../components/TourCard";
-const collections = [
-  {
-    id: 1,
-    title: "Canoe Boating",
-    price: "110.00",
-    rating: 5,
-    image: "/images/adventure/collections/Boating.jpg",
-  },
-  {
-    id: 2,
-    title: "Camping",
-    price: "210.00",
-    rating: 5,
-    image: "/images/adventure/collections/camping.jpg",
-  },
+import { adventureCollections } from "../../constants/adventure_collection";
 
-  {
-    id: 3,
-    title: "Bamboo Rafting",
-    price: "158.00",
-    rating: 5,
-    image: "/images/adventure/collections/BambooRafting.jpg",
-  },
-  {
-    id: 4,
-    title: "Canyon Rope Swing",
-    price: "180.00",
-    rating: 5,
-    image: "/images/adventure/collections/swing.jpg",
-  },
-  {
-    id: 5,
-    title: "Freestyle Canyoning",
-    price: "180.00",
-    rating: 5,
-    image: "/images/adventure/collections/canyoning.jpg",
-  },
-  {
-    id: 6,
-    title: "Hiking",
-    price: "165.00",
-    rating: 5,
-    image: "/images/adventure/collections/hiking.jpg",
-  },
-  {
-    id: 7,
-    title: "Hills Climbing",
-    price: "105.00",
-    rating: 5,
-    image: "/images/adventure/collections/climbing.jpg",
-  },
-  {
-    id: 8,
-    title: "Horse Riding",
-    price: "180.00",
-    rating: 5,
-    image: "/images/adventure/collections/horse.jpg",
-  },
-  {
-    id: 9,
-    title: "Horseback Riding",
-    price: "205.00",
-    rating: 5,
-    image: "/images/adventure/collections/riding.jpg",
-  },
-  {
-    id: 10,
-    title: "Kayaking",
-    price: "140.00",
-    rating: 5,
-    image: "/images/adventure/collections/kayaking.jpg",
-  },
-  {
-    id: 11,
-    title: "Mountain Climbing",
-    price: "180.00",
-    rating: 5,
-    image: "/images/adventure/collections/climbing.jpg",
-  },
-  {
-    id: 12,
-    title: "Mountain Cycling",
-    price: "180.00",
-    rating: 5,
-    image: "/images/adventure/collections/cycling.jpg",
-  },
-];
 export default function AdvanturePackages() {
   const [filterValue, setFilterValue] = useState("");
   return (
@@ -137,7 +52,7 @@ export default function AdvanturePackages() {
           </ul>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 xxs:gap-4 lg:gap-10">
-          {collections.map((tour_package) => (
+          {adventureCollections.map((tour_package) => (
             <TourCard
               type="green"
               key={tour_package.id}

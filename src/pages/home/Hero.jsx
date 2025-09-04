@@ -49,7 +49,7 @@ export default function Hero() {
             <SwiperSlide key={item.id}>
               <div className="relative w-full h-full text-white text-center">
                 <div className="absolute top-[60%] md:top-[50%] xl:top-[40%] left-1/2 -translate-1/2 w-full px-4 lg:px-8">
-                  <h5 className="pb-10 md:pb-20 lg:pb-40 font-yuji text-xl sm:text-2xl md:text-3xl xl:text-4xl">
+                  <h5 className="pb-10 md:pb-20 lg:pb-40 font-calibre text-xl sm:text-2xl md:text-3xl xl:text-4xl">
                     Explore Beyond Borders
                   </h5>
 

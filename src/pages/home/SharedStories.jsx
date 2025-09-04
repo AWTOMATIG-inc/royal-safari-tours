@@ -61,7 +61,7 @@ export default function SharedStories() {
           }}
         >
           {stories.map((story) => (
-            <SwiperSlide key={story.id}>
+            <SwiperSlide className=" py-8" key={story.id}>
               <StoryCard story={story} />
             </SwiperSlide>
           ))}

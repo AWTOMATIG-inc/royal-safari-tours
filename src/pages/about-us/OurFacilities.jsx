@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import { SuitcaseIcon, SuitcaseRedIcon } from "../../components/svg-icons";
-
 export default function OurFacilities() {
   return (
     <section className="container mt-8">
@@ -42,9 +42,9 @@ export default function OurFacilities() {
         </div>
         <p className="text-lg sm:text-xl lg:text-2xl text-center pt-24 pb-10 max-w-[1200px] mx-auto">
           Whether it’s your first adventure or your fiftieth,{" "}
-          <a href="#" className="text-green font-semibold">
+          <Link to="/contact" className="text-green font-semibold">
             Royal Safari Tours
-          </a>{" "}
+          </Link>{" "}
           is your trusted partner in exploring the world.
         </p>
       </div>

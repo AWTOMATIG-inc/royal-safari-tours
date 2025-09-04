@@ -56,7 +56,7 @@ export default function Footer() {
   return (
     <footer className="bg-footer-banner">
       <div className="container text-white pt-10 sm:pt-20">
-        <div className="border-r border-gray-500 sm:hidden">
+        <div className="sm:hidden">
           <div>
             <img src={logo} alt="logo" className="max-w-[109px] h-auto" />
             <p className="mt-6">Address : khilgaon, Dhaka, Bangladesh, 1219</p>

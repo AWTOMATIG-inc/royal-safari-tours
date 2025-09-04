@@ -6,7 +6,7 @@ export default function ContactForm() {
       <div className="container md:!px-28 lg:!px-8 grid lg:grid-cols-[3fr_2fr] gap-8 lg:gap-12">
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14605.82905741786!2d90.4140418!3d23.766726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c781bbc20d1d%3A0xc9427ec3e21bc8f6!2sDhaka%201219!5e0!3m2!1sen!2sbd!4v1755357399034!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8899755754123!2d90.421937676023!3d23.751302588740497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b93b621c3675%3A0x8fa9a41022284755!2sTaltola%20Market!5e0!3m2!1sen!2sbd!4v1756882112689!5m2!1sen!2sbd"
             width="100%"
             height="100%"
             style={{ border: 0 }}

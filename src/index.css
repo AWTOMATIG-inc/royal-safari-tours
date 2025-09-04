@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mansalva&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&family=Young+Serif&family=Yuji+Mai&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Mansalva&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&family=Young+Serif&family=Yuji+Mai&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Mansalva");
 
 @import "tailwindcss";
 
 @theme inline {
-  --font-palanquin: "Palanquin Dark", sans-serif;
+  /* --font-palanquin: "Palanquin Dark", sans-serif;
   --font-young: "Young Serif", serif;
   --font-inter: "Inter", sans-serif;
   --font-yuji: "Yuji Mai", serif;
   --font-mansalva: "Mansalva", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
-  --font-montagu: "Montagu Slab", serif;
+  --font-montagu: "Montagu Slab", serif; */
+  --font-mansalva: "Mansalva", sans-serif;
+  --font-calibre: "calibre", sans-serif;
   --color-light: #fcfaee;
   --color-lightGray: #f2efdf;
   --color-green: #2cb775;
@@ -50,7 +53,7 @@
 }
 @layer base {
   body {
-    @apply font-montserrat;
+    @apply font-calibre;
   }
 }
 @custom-variant hover (&:hover);

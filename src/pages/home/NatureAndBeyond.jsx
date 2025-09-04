@@ -1,52 +1,11 @@
+import { useState } from "react";
 import CommonHeading from "../../components/CommonHeading";
 import ShapeButton from "../../components/ShapeButton";
 import TourCard from "../../components/TourCard";
-const tour_packages = [
-  {
-    id: 1,
-    image: "/images/tour-package/15499.jpeg",
-    title: "Hiking",
-    price: "43,500",
-    rating: 5,
-  },
-  {
-    id: 2,
-    image: "/images/tour-package/15498.jpeg",
-    title: "Wild Safari",
-    price: "32,900",
-    rating: 5,
-    priceOff: "2500",
-  },
-  {
-    id: 3,
-    image: "/images/tour-package/15497.jpeg",
-    title: "Mountain Climbing",
-    price: "48,900",
-    rating: 5,
-  },
-  {
-    id: 4,
-    image: "/images/tour-package/15500.jpeg",
-    title: "Experience",
-    price: "43,900",
-    rating: 5,
-  },
-  {
-    id: 5,
-    image: "/images/tour-package/15501.jpeg",
-    title: "Discover",
-    price: "49,900",
-    rating: 5,
-  },
-  {
-    id: 6,
-    image: "/images/tour-package/15502.jpeg",
-    title: "Explore",
-    price: "31,900",
-    rating: 5,
-  },
-];
+import { UseTourState } from "../../context/TourContextProvider";
 export default function NatureAndBeyond() {
+  const { packages, categoryChangeHandler, activeTab } = UseTourState();
+  const [showMore, setShowMore] = useState(false);
   return (
     <div className="bg-body">
       <div className="container max-w-[1520px] py-14">
@@ -55,34 +14,69 @@ export default function NatureAndBeyond() {
           subtitle="Unforgettable Journeys"
         />
         <div className="flex flex-wrap justify-center gap-4 w-fit mx-auto my-8">
-          <ShapeButton name="All" className="!text-black" />
+          <ShapeButton
+            name="All"
+            className={`group-hover:text-black hoverEffect ${
+              activeTab === "all" ? "!text-black" : ""
+            }`}
+            onClick={() => categoryChangeHandler("all")}
+          />
           <ShapeButton
             name="Bangladesh"
-            className="group-hover:text-black hoverEffect"
+            className={`group-hover:text-black hoverEffect ${
+              activeTab === "bangladesh" ? "!text-black" : ""
+            }`}
+            onClick={() => categoryChangeHandler("bangladesh")}
           />
           <ShapeButton
             name="Thailand"
-            className="group-hover:text-black hoverEffect"
+            className={`group-hover:text-black hoverEffect ${
+              activeTab === "thailand" ? "!text-black" : ""
+            }`}
+            onClick={() => categoryChangeHandler("thailand")}
           />
           <ShapeButton
             name="Nepal"
-            className="group-hover:text-black hoverEffect"
+            className={`group-hover:text-black hoverEffect ${
+              activeTab === "nepal" ? "!text-black" : ""
+            }`}
+            onClick={() => categoryChangeHandler("nepal")}
           />
           <ShapeButton
             name="Srilanka"
-            className="group-hover:text-black hoverEffect"
+            className={`group-hover:text-black hoverEffect ${
+              activeTab === "srilanka" ? "!text-black" : ""
+            }`}
+            onClick={() => categoryChangeHandler("srilanka")}
           />
           <ShapeButton
-            name="Singapore"
-            className="group-hover:text-black hoverEffect"
+            name="Maldives"
+            className={`group-hover:text-black hoverEffect ${
+              activeTab === "maldives" ? "!text-black" : ""
+            }`}
+            onClick={() => categoryChangeHandler("maldives")}
           />
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 xxs:gap-4 lg:gap-10 pt-20">
-          {tour_packages.map((tour_package) => (
-            <TourCard key={tour_package.id} tour_package={tour_package} />
-          ))}
+        <div
+          id="tour_packages"
+          className="grid grid-cols-2 lg:grid-cols-3 gap-3 xxs:gap-4 lg:gap-10 pt-20"
+        >
+          {packages
+            .slice(0, showMore ? packages.length : 6)
+            .map((tour_package) => (
+              <TourCard key={tour_package.id} tour_package={tour_package} />
+            ))}
         </div>
+        {packages.length > 6 && (
+          <div className="mx-auto block w-fit mt-5">
+            <ShapeButton
+              onClick={() => setShowMore((prev) => !prev)}
+              name={showMore ? "See Less" : "See More"}
+              className="!text-orange "
+            />
+          </div>
+        )}
       </div>
     </div>
   );

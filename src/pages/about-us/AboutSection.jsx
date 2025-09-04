@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function AboutSection() {
   return (
     <section className="container ">
@@ -6,9 +7,9 @@ export default function AboutSection() {
           Who We Are
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-10">
-          <a href="#" className="font-semibold text-green">
+          <Link to="/contact" className="font-semibold text-green">
             Royal Safari Tours
-          </a>{" "}
+          </Link>{" "}
           is a Khilgaon-based travel agency dedicated to delivering premium yet
           affordable tour experiences across South Asia and beyond. From the
           vibrant streets of Kathmandu to the serene coasts of the Maldives, our
